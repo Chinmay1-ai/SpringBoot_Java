@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Spring Initializer Project\Employee"/>
 			<item value="C:\Spring Initializer Project\MRSystem"/>
 			<item value="C:\Spring Initializer Project\EmployeeInfo"/>
 			<item value="C:\Spring Initializer Project\Day1_SpringBooot"/>
