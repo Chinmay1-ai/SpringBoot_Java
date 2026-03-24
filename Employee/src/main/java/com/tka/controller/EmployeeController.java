@@ -29,7 +29,7 @@ public class EmployeeController {
 		return service.insertData(e);
 	}
 
-	@DeleteMapping("/remove/{id}")
+	@DeleteMapping("/remove")
 	public String deleteData(@RequestParam int id) {
 		return service.deleteData(id);
 	}
@@ -40,7 +40,7 @@ public class EmployeeController {
 	}
 	
 	@GetMapping("/search")
-	public List<Employee> getAllData(@PathVariable int eId) {
+	public List<Employee> getAllData() {
 		return service.getAllData();
 	}
 	@GetMapping("/search/{eId}")
