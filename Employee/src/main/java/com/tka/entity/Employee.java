@@ -7,8 +7,8 @@ import jakarta.persistence.Id;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data                      //provide getter & setter and toString 
-@NoArgsConstructor          //provide No Argument Constructor
+@Data                     
+@NoArgsConstructor         
 @Entity
 public class Employee {
 
