@@ -24,26 +24,27 @@ public class EmployeeController {
 	@Autowired
 	EmployeeService service;
 
-	@PostMapping("/register")
+	@PostMapping("/register")    // to register Employee
 	public String insertData(@RequestBody Employee e) {
 		return service.insertData(e);
 	}
 
-	@DeleteMapping("/remove")
+	@DeleteMapping("/remove")    // to remove the Employee
 	public String deleteData(@RequestParam int id) {
 		return service.deleteData(id);
 	}
-	
-	@PutMapping("/edit/{id}")
-	public String updateData(@RequestBody Employee e ,@PathVariable int id) {
-		return service.updateData(e ,id);
+
+	@PutMapping("/edit/{id}")    // to edit the Employee
+	public String updateData(@RequestBody Employee e, @PathVariable int id) {
+		return service.updateData(e, id);
 	}
-	
-	@GetMapping("/search")
+
+	@GetMapping("/search")      // to fetch all Employee
 	public List<Employee> getAllData() {
 		return service.getAllData();
 	}
-	@GetMapping("/search/{eId}")
+
+	@GetMapping("/search/{eId}")  // to fetch particular Employee
 	public Optional<Employee> getSingleData(@PathVariable int eId) {
 		return service.getSingleData(eId);
 	}
